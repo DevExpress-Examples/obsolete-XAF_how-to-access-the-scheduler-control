@@ -30,8 +30,8 @@
 {************************************************************************************}
 --%>
 <%@ Control Language="vb" AutoEventWireup="true" Inherits="HorizontalAppointmentTemplate" Codebehind="HorizontalAppointmentTemplate.ascx.vb" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v17.2" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
-<%@ Register Assembly="DevExpress.Web.v17.2" Namespace="DevExpress.Web" TagPrefix="dxe" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v15.2" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
+<%@ Register Assembly="DevExpress.Web.v15.2" Namespace="DevExpress.Web" TagPrefix="dxe" %>
 <div id="appointmentDiv" runat="server" class='<%#CType(Container, HorizontalAppointmentTemplateContainer).Items.AppointmentStyle.CssClass%>'>
     <table style="width:100%; height:100%;" cellpadding="0" cellspacing="0">
         <tr>

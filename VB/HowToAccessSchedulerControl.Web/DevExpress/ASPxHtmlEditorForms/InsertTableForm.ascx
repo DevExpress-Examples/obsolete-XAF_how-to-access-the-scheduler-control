@@ -13,15 +13,15 @@
 {************************************************************************************}
 --%>
 <%@ Control Language="vb" AutoEventWireup="true" Codebehind="InsertTableForm.ascx.vb" Inherits="InsertTableForm" %>
-<%@ Assembly name="DevExpress.Data.v17.2" %>
-<%@ Register Assembly="DevExpress.Web.ASPxHtmlEditor.v17.2" Namespace="DevExpress.Web.ASPxHtmlEditor"
+<%@ Assembly name="DevExpress.Data.v15.2" %>
+<%@ Register Assembly="DevExpress.Web.ASPxHtmlEditor.v15.2" Namespace="DevExpress.Web.ASPxHtmlEditor"
     TagPrefix="dxhe" %>
-<%@ Register Assembly="DevExpress.Web.v17.2" Namespace="DevExpress.Web"
+<%@ Register Assembly="DevExpress.Web.v15.2" Namespace="DevExpress.Web"
     TagPrefix="dxe" %>
-<%@ Register Assembly="DevExpress.Web.v17.2" Namespace="DevExpress.Web"
+<%@ Register Assembly="DevExpress.Web.v15.2" Namespace="DevExpress.Web"
     TagPrefix="dxp" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxHtmlEditor.v17.2" Namespace="DevExpress.Web.ASPxHtmlEditor" TagPrefix="dxhe" %>
+<%@ Register Assembly="DevExpress.Web.ASPxHtmlEditor.v15.2" Namespace="DevExpress.Web.ASPxHtmlEditor" TagPrefix="dxhe" %>
 
 <dxp:ASPxPanel ID="MainPanel" runat="server" Width="100%" DefaultButton="btnOk">
     <panelcollection>

@@ -45,10 +45,10 @@
 {************************************************************************************}--%>
 
 <%@ Control Language="C#" AutoEventWireup="true" Inherits="InplaceEditor" Codebehind="InplaceEditor.ascx.cs" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v17.2" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v17.2" Namespace="DevExpress.Web.ASPxScheduler.Controls"
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v15.2" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v15.2" Namespace="DevExpress.Web.ASPxScheduler.Controls"
     TagPrefix="cc1" %>
-<%@ Register Assembly="DevExpress.Web.v17.2" Namespace="DevExpress.Web"
+<%@ Register Assembly="DevExpress.Web.v15.2" Namespace="DevExpress.Web"
     TagPrefix="dxe" %>
 <table cellpadding="2"; cellspacing="0" style="width:100%; height:100%">
     <tr>
