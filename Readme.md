@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [WebSchedulerController.cs](./CS/HowToAccessSchedulerControl.Module.Web/WebSchedulerController.cs) (VB: [WebSchedulerController.vb](./VB/HowToAccessSchedulerControl.Module.Web/WebSchedulerController.vb))
+* [WinSchedulerController.cs](./CS/HowToAccessSchedulerControl.Module.Win/WinSchedulerController.cs) (VB: [WinSchedulerController.vb](./VB/HowToAccessSchedulerControl.Module.Win/WinSchedulerController.vb))
+<!-- default file list end -->
 # How to Access the Scheduler Control
 
 
