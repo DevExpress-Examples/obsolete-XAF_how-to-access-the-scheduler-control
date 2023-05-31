@@ -1,39 +1,37 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace HowToAccessSchedulerControl.Module.Web
-   Partial Public Class HowToAccessSchedulerControlAspNetModule
-	  ''' <summary> 
-	  ''' Required designer variable.
-	  ''' </summary>
-	  Private components As System.ComponentModel.IContainer = Nothing
+Namespace HowToAccessSchedulerControl.[Module].Web
 
-	  ''' <summary> 
-	  ''' Clean up any resources being used.
-	  ''' </summary>
-	  ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-	  Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-		 If disposing AndAlso (components IsNot Nothing) Then
-			components.Dispose()
-		 End If
-		 MyBase.Dispose(disposing)
-	  End Sub
+    Partial Class HowToAccessSchedulerControlAspNetModule
 
-	  #Region "Component Designer generated code"
+        ''' <summary> 
+        ''' Required designer variable.
+        ''' </summary>
+        Private components As System.ComponentModel.IContainer = Nothing
 
-	  ''' <summary> 
-	  ''' Required method for Designer support - do not modify 
-	  ''' the contents of this method with the code editor.
-	  ''' </summary>
-	  Private Sub InitializeComponent()
-		 ' 
-		 ' HowToAccessSchedulerControlAspNetModule
-		 ' 
-		 Me.RequiredModuleTypes.Add(GetType(HowToAccessSchedulerControl.Module.HowToAccessSchedulerControlModule))
-		 Me.RequiredModuleTypes.Add(GetType(DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule))
-		 Me.RequiredModuleTypes.Add(GetType(DevExpress.ExpressApp.Scheduler.Web.SchedulerAspNetModule))
+        ''' <summary> 
+        ''' Clean up any resources being used.
+        ''' </summary>
+        ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
+            End If
 
-	  End Sub
+            MyBase.Dispose(disposing)
+        End Sub
 
-	  #End Region
-   End Class
+#Region "Component Designer generated code"
+        ''' <summary> 
+        ''' Required method for Designer support - do not modify 
+        ''' the contents of this method with the code editor.
+        ''' </summary>
+        Private Sub InitializeComponent()
+            ' 
+            ' HowToAccessSchedulerControlAspNetModule
+            ' 
+            Me.RequiredModuleTypes.Add(GetType(HowToAccessSchedulerControl.[Module].HowToAccessSchedulerControlModule))
+            Me.RequiredModuleTypes.Add(GetType(DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule))
+            Me.RequiredModuleTypes.Add(GetType(DevExpress.ExpressApp.Scheduler.Web.SchedulerAspNetModule))
+        End Sub
+#End Region
+    End Class
 End Namespace

@@ -1,1 +1,1 @@
-<%@ Application Language="vb" CodeBehind="Global.asax.vb" Inherits="HowToAccessSchedulerControl.Web.Global"%>
+<%@ Application Language="VB" CodeBehind="Global.asax.vb" Inherits="HowToAccessSchedulerControl.Web.Global"%>

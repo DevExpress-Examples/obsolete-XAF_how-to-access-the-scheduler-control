@@ -1,38 +1,33 @@
-Imports Microsoft.VisualBasic
 Imports System
 Imports System.Configuration
-Imports System.Windows.Forms
-
 Imports DevExpress.ExpressApp
 Imports DevExpress.ExpressApp.Security
-Imports DevExpress.ExpressApp.Win
-Imports DevExpress.Persistent.Base
-Imports DevExpress.Persistent.BaseImpl
 
 Namespace HowToAccessSchedulerControl.Win
-   Friend NotInheritable Class Program
-	  ''' <summary>
-	  ''' The main entry point for the application.
-	  ''' </summary>
-	  Private Sub New()
-	  End Sub
-	  <STAThread> _
-	  Shared Sub Main()
-		 Application.EnableVisualStyles()
-		 Application.SetCompatibleTextRenderingDefault(False)
-		 EditModelPermission.AlwaysGranted = System.Diagnostics.Debugger.IsAttached
-		 Dim myApplication As New HowToAccessSchedulerControlWindowsFormsApplication()
-		 If ConfigurationManager.ConnectionStrings("ConnectionString") IsNot Nothing Then
-			myApplication.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
-		 End If
-		 Try
-   DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.Register()
-   			myApplication.ConnectionString = DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.ConnectionString
-			myApplication.Setup()
-			myApplication.Start()
-		 Catch e As Exception
-			myApplication.HandleException(e)
-		 End Try
-	  End Sub
-   End Class
+
+    Friend Module Program
+
+        ''' <summary>
+        ''' The main entry point for the application.
+        ''' </summary>
+        <STAThread>
+        Sub Main()
+            Call Windows.Forms.Application.EnableVisualStyles()
+            Windows.Forms.Application.SetCompatibleTextRenderingDefault(False)
+            EditModelPermission.AlwaysGranted = System.Diagnostics.Debugger.IsAttached
+            Dim application As HowToAccessSchedulerControlWindowsFormsApplication = New HowToAccessSchedulerControlWindowsFormsApplication()
+            If ConfigurationManager.ConnectionStrings("ConnectionString") IsNot Nothing Then
+                application.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
+            End If
+
+            Try
+                Xpo.InMemoryDataStoreProvider.Register()
+                application.ConnectionString = Xpo.InMemoryDataStoreProvider.ConnectionString
+                application.Setup()
+                application.Start()
+            Catch e As Exception
+                application.HandleException(e)
+            End Try
+        End Sub
+    End Module
 End Namespace
